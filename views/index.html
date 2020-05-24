@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Welcome to Healthlandia</title>
+
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Mont. Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 1000, 4000, 8000"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="b_style">
+    <div>
+      <img
+        src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Ftop%20bar-2.png?v=1590341238682"
+        class="center" style="margin-top:20px"
+      />
+    </div>
+
+    <div class="about" style="text-align:center">
+      <h1>
+        Where being healthy is also fun!
+      </h1>
+      <p style="font-size:24px; text-align:center">
+        Our mission is to ensure that kids are at their fullest potential in
+        order for them to grow strong and healthy. This website is a daily
+        companion and will focus on improving your child’s mental and physical
+        health with an interactive board game!
+      </p>
+    </div>
+
+    <div class="howTo">
+      <article id="text">
+      <h1>
+        How It Works
+      </h1>
+      <p class="howText">
+        Everyday once your child logs into their account, they will be given a
+        To-Do List of Daily Goals. These goals consist of health goals to
+        improve daily well being. Two steps are taken along the Healthlandia
+        playing board every time the list of goals is completed. The more steps
+        taken, the more badges that can be unlocked and achieved!
+      </p>
+      </article>
+      <article id="pic">
+      <img
+        src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fcandylandmapgreen.jpg?v=1590348374013"
+        style="padding-top:-600px"
+        class="mapImg"
+      />
+      </article>
+    </div>
+
+    <div class="topnav">
+      <a href="log-in.html">Login</a>
+      <a class="active" href="#">Home</a>
+    </div>
+
+    <div class="main">
+      <form id="badges-form">
+        <div class="container sign-up">
+          <h1 style="text-align:center">Sign Up</h1>
+          <p style="text-align:center">
+            Please fill in this form to create an account.
+          </p>
+          <label for="username"
+            ><b><center>Username</center></b></label
+          >
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            id="username"
+            required
+          />
+
+          <label for="psw"
+            ><b><center>Password</center></b></label
+          >
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="pass"
+            id="pass"
+            required
+          />
+
+          <label for="picURL"
+            ><b><center>Profile Picture</center></b></label
+          >
+          <div style="float: center; justify-text: center">
+            <div
+              style="display: flex; align-items: center; justify-content: center;"
+            >
+              <input
+                type="radio"
+                id="broc"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_5-removebg-preview.png?v=1590300344817"
+              />
+              <label for="broc" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_5-removebg-preview.png?v=1590300344817"/></label
+              ><br />
+              <input
+                type="radio"
+                id="onion"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_4-removebg-preview.png?v=1590300159737"
+              />
+              <label for="onion" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_4-removebg-preview.png?v=1590300159737"/></label
+              ><br />
+              <input
+                type="radio"
+                id="carrot"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage-removebg-preview.png?v=1590299877776"
+              />
+              <label for="carrot" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage-removebg-preview.png?v=1590299877776"
+              /></label>
+            </div>
+            <p><br /></p>
+            <div class="clearfix">
+              <button type="submit" id="submit-user" class="signupbtn">
+                Submit
+              </button>
+            </div>
+            <p id="conf">
+              Your account has been made. Click the "Login" button on the top
+              right.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script></script>
+</html>

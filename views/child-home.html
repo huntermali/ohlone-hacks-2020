@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Welcome to Glitch!</title>
+
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Mont. Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 1000, 4000, 8000"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="b_style" onload="display_info()">
+    <img
+      id="pfp_display"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/1200px-Question_mark_%28black%29.svg.png"
+    />
+    <p class="welcome" id="welcome-msg">
+      Welcome
+    </p>
+    <section id="everything">
+      <article class="words">
+        <div class="topnav">
+          <a href="/">Log Out</a>
+          <a href="badges-page.html"> Badges </a>
+          <a class="active" href="child-home.html"> Home </a>
+        </div>
+        <div class="goals">
+          <h1>Daily Goals</h1>
+          <form>
+            <ul>
+              <li>
+                <input type="checkbox" id="brush" /><a href="timer.html" style="color:##4381C1; text-decoration:none"
+                  >Brush your Teeth</a
+                >
+              </li>
+              <li><input type="checkbox" id="veggies" />Eat Veggies</li>
+              <li><input type="checkbox" id="fruits" />Eat Fruits</li>
+              <li><input type="checkbox" id="walk" />Go on a Walk</li>
+              <li><input type="checkbox" id="jacks" />Do 20 Jumping Jacks</li>
+              <li>
+                <input type="checkbox" id="water" />Drink Water at Least 3 Times
+                a Day
+              </li>
+            </ul>
+            <button
+              type="submit"
+              id="daily-submit"
+              style="width:80%; margin-left:45px; background-color:#4381C1; color:white">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="fact" style="margin-bottom:50px">
+          <h1 style="margin-left:20px">Fun Fact</h1>
+          <p class="funfact" style="margin-left:20px"></p>
+          <button class="getfact" style="width:80%; margin-left:45px; background-color: #540D6E; color:white">
+            Get Another Fact
+          </button>
+        </div>
+      </article>
+      <article class="map">
+        <img style="max-width:80%; height:auto; margin-top:70px" src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fcandylandmapgreen.jpg?v=1590348374013"
+        />
+      </article>
+    </section>
+  </body>
+</html>
