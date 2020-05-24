@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A cool thing made with Glitch" />
+
+    <title>Welcome to Healthlandia</title>
+
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Mont. Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat: 1000, 4000, 8000"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="b_style">
+    <div class="topnav">
+      <button
+        onclick="document.getElementById('id01').style.display='block'; log_in();"
+        style="width:auto; float:right"
+        class="log-in"
+      >
+        <a class="active">Login</a>
+      </button>
+      <a href="/">Home</a>
+    </div>
+
+    <div class="main">
+      <form id="badges-form">
+        <div class="container sign-up">
+          <h1 style="text-align:center">Sign Up</h1>
+          <p style="text-align:center">
+            Please fill in this form to create an account.
+          </p>
+          <label for="username"
+            ><b><center>Username</center></b></label
+          >
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            id="username"
+            required
+          />
+
+          <label for="psw"
+            ><b><center>Password</center></b></label
+          >
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="pass"
+            id="pass"
+            required
+          />
+
+          <label for="picURL"
+            ><b><center>Profile Picture</center></b></label
+          >
+          <div style="float: center; justify-text: center">
+            <div
+              style="display: flex; align-items: center; justify-content: center;"
+            >
+              <input
+                type="radio"
+                id="broc"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_5-removebg-preview.png?v=1590300344817"
+              />
+              <label for="broc" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_5-removebg-preview.png?v=1590300344817"/></label
+              ><br />
+              <input
+                type="radio"
+                id="onion"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_4-removebg-preview.png?v=1590300159737"
+              />
+              <label for="onion" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage_4-removebg-preview.png?v=1590300159737"/></label
+              ><br />
+              <input
+                type="radio"
+                id="carrot"
+                name="picURL"
+                value="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage-removebg-preview.png?v=1590299877776"
+              />
+              <label for="carrot" class="picURL"
+                ><img
+                  src="https://cdn.glitch.com/94fb0a80-df91-42de-b5a6-808b9d4de000%2Fimage-removebg-preview.png?v=1590299877776"
+              /></label>
+            </div>
+            <p><br /></p>
+            <div class="clearfix">
+              <button type="submit" id="submit-user" class="signupbtn">
+                Submit Badge
+              </button>
+            </div>
+            <p id="conf">
+              Your account has been made. Click the "Login" button on the top
+              right.
+            </p>
+          </div>
+        </div>
+      </form>
+
+      <div id="id01" class="modal">
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span
+              onclick="document.getElementById('id01').style.display='none'"
+              class="close"
+              title="Close Modal"
+              >&times;</span
+            >
+          </div>
+
+          <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+              id="l-user"
+              equired
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              id="l-pass"
+              required
+            />
+
+            <button type="submit" id="login-submit">Login</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>

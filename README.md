@@ -1,1 +1,0 @@
-# ohlone-hacks-2020
